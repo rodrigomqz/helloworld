@@ -1,3 +1,4 @@
+---
 - hosts: WEB
   remote_user: root
   become: true
