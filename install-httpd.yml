@@ -1,5 +1,5 @@
-- hosts: test-servers
-  remote_user: nahmed
+- hosts: WEB
+  remote_user: root
   become: true
   vars:
     project_root: /var/www/html
