@@ -7,7 +7,7 @@
     yum:
       name: httpd
       state: latest
-  - name: Iniciando o Apache!
+  - name: Iniciando o Apache
   service:
       name: httpd 
       state: started
