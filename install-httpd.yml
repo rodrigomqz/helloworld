@@ -1,5 +1,5 @@
 ---
-- name: Playbook para instalar o apache!!
+- name: Playbook para instalar o apache
   hosts: web
   become: yes
   tasks:
