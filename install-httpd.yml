@@ -1,13 +1,13 @@
 ---
-- name: playbook para instalar o apache
+- name: This sets up an httpd webserver
   hosts: web
   become: yes
   tasks:
-  - name: Instalar o apache pelo yum 
+  - name: Install apache packages
     yum:
       name: httpd
       state: latest
-  - name: Iniciando o Apache
-  service:
-      name: httpd 
+  - name: ensure httpd is running
+    service:
+      name: httpd
       state: started
